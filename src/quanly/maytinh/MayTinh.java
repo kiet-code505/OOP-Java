@@ -1,3 +1,5 @@
+package quanly.maytinh;
+
 public class MayTinh {
     String maMay;
     String hang;

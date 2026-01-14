@@ -1,3 +1,5 @@
+package quanly.nhanvien;
+
 public class NhanVien {
     String maNv;
     String hoTen;

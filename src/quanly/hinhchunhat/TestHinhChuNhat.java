@@ -1,4 +1,6 @@
-public class Main {
+package quanly.hinhchunhat;
+
+public class TestHinhChuNhat {
     public static void main(String[] args) {
         HinhChuNhat hcn1 = new HinhChuNhat();
         hcn1.setChieuDai(6);

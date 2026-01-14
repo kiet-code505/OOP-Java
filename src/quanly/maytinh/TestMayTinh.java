@@ -1,3 +1,7 @@
+package quanly.maytinh;
+
+import quanly.sinhvien.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,5 +35,8 @@ public class TestMayTinh {
                 mayTinhList.get(i).hienThiThongTin();
             }
         }
+
+        Student student1 = new Student();
+        DiemSo diemso1 = new DiemSo();
     }
 }

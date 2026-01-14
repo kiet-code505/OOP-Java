@@ -1,3 +1,5 @@
+package quanly.caulacbo;
+
 public class CauLacBo {
     String maCLB;
     String tenCLB;

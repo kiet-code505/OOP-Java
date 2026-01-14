@@ -1,7 +1,12 @@
+package quanly.sinhvien;
+
 public class Student {
     private  String studentId;
     private String studentName;
     private  String height;
+
+    public Student() {
+    }
 
     public Student(String studentId, String studentName, String height) {
         this.studentId = studentId;
@@ -35,7 +40,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "quanly.sinhvien.Student{" +
                 "studentId='" + studentId + '\'' +
                 ", studentName='" + studentName + '\'' +
                 ", height='" + height + '\'' +

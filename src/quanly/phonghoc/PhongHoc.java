@@ -1,3 +1,5 @@
+package quanly.phonghoc;
+
 public class PhongHoc {
     String maPhong;
     String tenPhong;

@@ -1,3 +1,5 @@
+package quanly.monhoc;
+
 public class TestMonHoc {
     public static void main(String[] args) {
         MonHoc monToan = new MonHoc();

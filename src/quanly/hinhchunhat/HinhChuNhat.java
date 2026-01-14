@@ -1,3 +1,5 @@
+package quanly.hinhchunhat;
+
 public class HinhChuNhat {
     double chieuDai;
     double chieuRong;

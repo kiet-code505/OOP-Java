@@ -1,3 +1,5 @@
+package quanly.monhoc;
+
 public class MonHoc {
     int maMon;
     String tenMon;
