@@ -20,10 +20,12 @@ public class TaiKhoanTietKiem extends TaiKhoan {
     }
 
     public double tinhLai() {
+
         return getSoDu() * (laiSuat / 100) * kyHan / 12;
     }
 
     public double tinhLai(int soThang) {
+
         return getSoDu() * (laiSuat / 100) * soThang / 12;
     }
 

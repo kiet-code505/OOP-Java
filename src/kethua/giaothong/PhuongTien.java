@@ -10,6 +10,7 @@ public abstract class PhuongTien {
         this.bienSoXe = bienSoXe;
         this.hangSanXuat = hangSanXuat;
         this.namSanXuat = namSanXuat;
+        this.giaBan =0;
     }
 
     public PhuongTien(String bienSoXe, String hangSanXuat, int namSanXuat, double giaBan) {

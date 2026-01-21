@@ -17,12 +17,30 @@ public class TaiKhoanThanhToan extends TaiKhoan{
     public double rutTien (double soTien) {
         if (soTien>hanMucRut) {
             System.out.println("Vuot muc rut tien");
+            return getSoDu();
         }
+        double soDu = getSoDu()-soTien;
+        System.out.println("So du con lai: " + soDu);
         return soTien;
     }
 
+    public double chuyenKhoan(String soTKhoan, double soTien) {
+        if (getSoDu()>=soTien) {
+            System.out.println("Chuyen tien den voi STK: " + soTKhoan);
+            double soDuConLai = getSoDu()-soTien;
+            return soDuConLai;
+        }
+        System.out.println("Chuyen khoan that bai");
+        return -1;
+    }
+
     public void chuyenKhoan (String soTKNhan, double soTien, String noiDung) {
-        System.out.println("Noi dung: " + noiDung);
+        if (getSoDu()>=soTien) {
+            System.out.println("Chuyen tien den voi STK: " + soTKNhan);
+            System.out.println("Noi dung: " + noiDung);
+            double soDuConLai = getSoDu()-soTien;
+        }
+        System.out.println("Chuyen khoan that bai");
     }
 
     @Override

@@ -13,12 +13,22 @@ public class SinhVienDaiHoc extends SinhVien{
 
     @Override
     public double tinhHocPhi() {
+        
         return soTinChi * 500000;
     }
 
     @Override
     public String xepLoai() {
-        return super.xepLoai();
+        if(getDiemTrungBinh()>=8.5 && getDiemTrungBinh()<=10) {
+            return "Xuat sac";
+        } else if (getDiemTrungBinh()>=7.0) {
+            return "Gioi";
+        } else if (getDiemTrungBinh()>=5.5) {
+            return "Kha";
+        } else if (getDiemTrungBinh()>=4.0) {
+            return "Trung binh";
+        }
+        return "Yeu";
     }
 
     // Overloading riêng

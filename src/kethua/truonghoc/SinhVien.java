@@ -7,7 +7,10 @@ public abstract class SinhVien {
     private double diemTrungBinh;
 
     public SinhVien(String maSV, String hoTen) {
-        this(maSV, hoTen, 2000, 0.0);
+       this.maSV = maSV;
+       this.hoTen = hoTen;
+       this.namSinh =2000;
+       this.diemTrungBinh=0.0;
     }
 
     public SinhVien(String maSV, String hoTen, int namSinh, double diemTrungBinh) {
@@ -18,18 +21,22 @@ public abstract class SinhVien {
     }
 
     public String getMaSV() {
+
         return maSV;
     }
 
     public String getHoTen() {
+
         return hoTen;
     }
 
     public int getNamSinh() {
+
         return namSinh;
     }
 
     public double getDiemTrungBinh() {
+
         return diemTrungBinh;
     }
 
@@ -46,13 +53,7 @@ public abstract class SinhVien {
 
     public abstract double tinhHocPhi();
 
-    public String xepLoai() {
-        if (diemTrungBinh >= 8.5) return "Xuat sac";
-        if (diemTrungBinh >= 7.0) return "Gioi";
-        if (diemTrungBinh >= 5.5) return "Kha";
-        if (diemTrungBinh >= 4.0) return "Trung binh";
-        return "Yếu";
-    }
+    public abstract String xepLoai();
 
     public void xepLoai(String hocKy) {
         System.out.println("Hoc ky: " + hocKy + " - Xep loai: " + xepLoai());

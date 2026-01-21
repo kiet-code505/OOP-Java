@@ -13,11 +13,10 @@ public class XeMay extends PhuongTien{
 
     @Override
     public double tinhThueHangNam() {
-        if (phanKhoi < 150) {
-            return getGiaBan() * 0.01; // 1%
-        } else {
-            return getGiaBan() * 0.015; // 1.5%
+        if (phanKhoi <= 150) {
+            return getGiaBan() * 0.01;
         }
+            return getGiaBan() * 0.015;
     }
 
     @Override

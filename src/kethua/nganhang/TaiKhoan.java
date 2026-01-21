@@ -9,6 +9,7 @@ public class TaiKhoan {
     public TaiKhoan(String soTaiKhoan, String tenChuTaiKhoan) {
         this.soTaiKhoan = soTaiKhoan;
         this.tenChuTaiKhoan = tenChuTaiKhoan;
+        this.soDu = 0;
     }
 
     public TaiKhoan(String soTaiKhoan, String tenChuTaiKhoan, double soDu, String ngayMoTaiKhoan) {
@@ -35,7 +36,9 @@ public class TaiKhoan {
     }
 
     public void setTenChuTaiKhoan(String tenChuTaiKhoan) {
-        this.tenChuTaiKhoan = tenChuTaiKhoan;
+        if (tenChuTaiKhoan != null) {
+            this.tenChuTaiKhoan = tenChuTaiKhoan;
+        }
     }
 
     public double napTien (double soTien) {

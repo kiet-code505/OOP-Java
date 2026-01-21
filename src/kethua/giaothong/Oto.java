@@ -13,6 +13,7 @@ public class Oto extends PhuongTien{
 
     @Override
     public double tinhThueHangNam() {
+
         return getGiaBan()*0.02;
     }
 
